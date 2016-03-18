@@ -10,14 +10,15 @@ use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 
 class Handler extends ExceptionHandler
 {
+    const CLASSNAME = __CLASS__;
     /**
      * A list of the exception types that should not be reported.
      *
      * @var array
      */
     protected $dontReport = [
-        HttpException::class,
-        ModelNotFoundException::class,
+        'Symfony\Component\HttpKernel\Exception\HttpExceptio',
+        'Symfony\Component\HttpKernel\Exception\NotFoundHttpException',
     ];
 
     /**

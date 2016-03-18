@@ -7,6 +7,7 @@ use Illuminate\Contracts\Auth\Guard;
 
 class RedirectIfAuthenticated
 {
+    const CLASSNAME = __CLASS__;
     /**
      * The Guard implementation.
      *

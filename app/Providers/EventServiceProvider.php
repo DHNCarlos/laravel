@@ -7,6 +7,7 @@ use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvi
 
 class EventServiceProvider extends ServiceProvider
 {
+    const CLASSNAME = __CLASS__;
     /**
      * The event listener mappings for the application.
      *

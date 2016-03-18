@@ -15,6 +15,7 @@ class User extends Model implements AuthenticatableContract,
                                     CanResetPasswordContract
 {
     use Authenticatable, Authorizable, CanResetPassword;
+    const CLASSNAME = __CLASS__;
 
     /**
      * The database table used by the model.

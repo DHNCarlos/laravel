@@ -6,18 +6,19 @@ use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
 {
+    const CLASSNAME = __CLASS__;
     /**
      * The application's global HTTP middleware stack.
      *
      * @var array
      */
     protected $middleware = [
-        \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
-        \App\Http\Middleware\EncryptCookies::class,
-        \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
-        \Illuminate\Session\Middleware\StartSession::class,
-        \Illuminate\View\Middleware\ShareErrorsFromSession::class,
-        \App\Http\Middleware\VerifyCsrfToken::class,
+        \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::CLASSNAME,
+        \App\Http\Middleware\EncryptCookies::CLASSNAME,
+        \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::CLASSNAME,
+        \Illuminate\Session\Middleware\StartSession::CLASSNAME,
+        \Illuminate\View\Middleware\ShareErrorsFromSession::CLASSNAME,
+        \App\Http\Middleware\VerifyCsrfToken::CLASSNAME,
     ];
 
     /**
@@ -26,8 +27,8 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $routeMiddleware = [
-        'auth' => \App\Http\Middleware\Authenticate::class,
-        'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
-        'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
+        'auth' => \App\Http\Middleware\Authenticate::CLASSNAME,
+        'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::CLASSNAME,
+        'guest' => \App\Http\Middleware\RedirectIfAuthenticated::CLASSNAME,
     ];
 }
