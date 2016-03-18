@@ -170,7 +170,7 @@ return [
         'Cookie'    => Illuminate\Support\Facades\Cookie::CLASSNAME,
         'Crypt'     => Illuminate\Support\Facades\Crypt::CLASSNAME,
         'DB'        => Illuminate\Support\Facades\DB::CLASSNAME,
-        'Eloquent'  => Illuminate\Database\Eloquent\Model::CLASSNAME,
+        'Eloquent'  => 'Illuminate\Database\Eloquent\Model',
         'Event'     => Illuminate\Support\Facades\Event::CLASSNAME,
         'File'      => Illuminate\Support\Facades\File::CLASSNAME,
         'Gate'      => Illuminate\Support\Facades\Gate::CLASSNAME,

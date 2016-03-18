@@ -16,7 +16,7 @@
     ],
     "require": {
         "php": ">=5.4.16",
-        "laravel/framework": "5.1.51"
+        "laravel/framework": "5.1.53"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
